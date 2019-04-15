@@ -38,14 +38,6 @@
       </div>
     </div>
   </div>`
-
-             //                 <div class="vis" data-info="${info.id}">
-             //
-             //<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="${info.tekst}">${info.titel}</button>
-             //</div>
-
-
-
          });
 
          document.querySelectorAll(".vis").forEach(elms => {
