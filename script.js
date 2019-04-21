@@ -1,7 +1,21 @@
  document.addEventListener("DOMContentLoaded", start);
 
 
+ function scrollFunction() {
+     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+         document.querySelector(".navbar").style.padding = "1px 1px";
+         document.querySelector(".navbar-brand").style.fontSize = "1px";
+     } else {
+         document.querySelector(".navbar").style.padding = "1px 0px";
+         document.querySelector(".navbar-brand").style.fontSize = "1px";
+     }
+ }
+
  function start() {
+
+     window.onscroll = function () {
+         scrollFunction()
+     };
 
      $(function () {
          $('[data-toggle="popover"]').popover()

@@ -515,6 +515,58 @@ header {
     margin-top: 13vw;
 }
 
+.navbar-my {
+    display: flex;
+    align-items: center;
+    background-image: url(img/nav-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.nav-inner {
+    padding-top: 1.1vw;
+    font-weight: 900;
+    color: #0022C1 !important;
+}
+
+.nav-inner img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.navbar-my-mobile {
+
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: none;
+}
+
+
+.nav-inner-mobile {
+    font-weight: 900;
+    color: #0022C1 !important;
+    text-align: center;
+    list-style: none;
+    font-size: 1.3em;
+}
+
+.nav-inner-mobile li {
+    padding: 8vw;
+}
+
+.nav-inner-mobil img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.logo_toggle {
+    background-image: url(img/nav-bg.png);
+    width: 100%;
+
+}
+
 
 @media only screen and (max-width: 480px) {
     .sponsor_h1 {
@@ -565,5 +617,16 @@ header {
 @media only screen and (max-width: 771px) {
     #spalsh h1 {
         font-size: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 990px) {
+    .navbar-my {
+        display: none;
+    }
+
+    .navbar-my-mobile {
+        display: block;
     }
 }
