@@ -22,48 +22,62 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-my fixed-top">
-        <ul class="container nav-inner">
+
+    <nav class="navbar-my fixed-top">
+        <ul class="nav-inner">
+
             <a href="#">
                 <img src="img/logo_blaa.png" alt="" class="navbar-brand"></a>
-            <a href="">BILLETTER</a>
-            <a href="#">LINE UP</a>
-            <a href="">EVNET</a>
-            <a href="">FRIVILLIG</a>
-            <a href="">SPONSORER</a>
-            <a href="">PAKKEREJSE</a>
+            <a href="#lineup">LINE UP</a>
+            <a target="_blank" href="https://www.ticketmaster.dk/artist/wonderfestiwall-billetter/991675">BILLETTER</a>
+            <a target="_blank" href="https://www.danskoferie.dk/bestil/pakkerejser/1744237/pakketur-til-wonderfestiwall-2019-fra-ystad?fbclid=IwAR36LOcZtFapcmw4vVLJ_NTfhAPzo0uuirvgeS4hRJU7TiVzqUu16Trg_Z8">PAKKEREJSE</a>
+            <a href="#info">info</a>
+            <a href="/frivillig.html">FRIVILLIG</a>
+            <a href="/sponsor.html">SPONSOR</a>
         </ul>
 
     </nav>
 
-    <nav class="navbar-my-mobile fixed-top">
-        <ul class="nav-inner-mobile">
-            <li class="logo_toggle">
-                <a href="#">
-                    <img src="img/logo_blaa.png" alt="" class="navbar-brand"></a>
 
-            </li>
-            <li>
 
-                <a href="">BILLETTER</a>
+
+
+    <nav class="navbar-my-mobile fixed-top ">
+
+        <div class="nav-mobile-top">
+            <a href="#">
+
+                <img src="img/logo_blaa.png" alt="" class="navbar-brand">
+            </a>
+
+            <div class="menu-knap">
+                <img src="img/img_523096.png" alt="" style="max-width: 30px;"></div>
+        </div>
+        <ul class="nav-inner-mobile close_menu">
+            <li>
+                <a href="#lineup">LINE UP</a>
             </li>
             <li>
-                <a href="">LINE UP</a>
+                <a target="_blank" href="https://www.ticketmaster.dk/artist/wonderfestiwall-billetter/991675">BILLETTER</a>
+            </li>
+
+            <li>
+                <a target="_blank" href="https://www.danskoferie.dk/bestil/pakkerejser/1744237/pakketur-til-wonderfestiwall-2019-fra-ystad?fbclid=IwAR36LOcZtFapcmw4vVLJ_NTfhAPzo0uuirvgeS4hRJU7TiVzqUu16Trg_Z8">PAKKEREJSE</a>
+            </li>
+
+
+
+            <li>
+                <a href="#info">info</a>
             </li>
             <li>
-                <a href="">EVNET</a>
+                <a href="/frivillig.html">FRIVILLIG</a>
             </li>
             <li>
-                <a href="">FRIVILLIG</a>
+                <a href="/sponsor.html">SPONSORER</a>
             </li>
-            <li>
-                <a href="">SPONSORER</a>
-            </li>
-            <li>
-                <a href="">PAKKEREJSE</a>
-            </li>
+
         </ul>
-
     </nav>
 
     <section id="spalsh">
@@ -71,95 +85,144 @@
         <div class="splash_content">
             <h1>Wonderfestiwall 2019</h1>
 
-            <a target="_blank" href="https://www.ticketmaster.dk/artist/wonderfestiwall-billetter/991675">
-                <div class="button">PAKKEREJSE</div>
-            </a>
-            <a target="_blank" href="https://www.ticketmaster.dk/artist/wonderfestiwall-billetter/991675">
-                <div class="button">BILLET</div>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/events/250669885602288/">
-                <div class="button">EVENT</div>
-            </a>
+            <div class="buttons">
+                <a target="_blank" href="https://www.danskoferie.dk/bestil/pakkerejser/1744237/pakketur-til-wonderfestiwall-2019-fra-ystad?fbclid=IwAR36LOcZtFapcmw4vVLJ_NTfhAPzo0uuirvgeS4hRJU7TiVzqUu16Trg_Z8">
+                    <div class="button">PAKKEREJSE</div>
+                </a>
+                <a target="_blank" href="https://www.ticketmaster.dk/artist/wonderfestiwall-billetter/991675">
+                    <div class="button">BILLET</div>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/events/250669885602288/">
+                    <div class="button">EVENT</div>
+                </a>
+            </div>
         </div>
 
 
     </section>
     <section id="lineup">
         <h1>MUSIK 2019</h1>
+
+        <div class="filter">
+
+            <button class="button1 filter_knap" data-kat="torsdag">Torsdag</button>
+            <button class="button1 filter_knap" data-kat="fredag">Fredag</button>
+            <button class="button1 filter_knap" data-kat="lørdag">Lørdag</button>
+            <button class="button1 aktiv filter_knap" data-kat="alle">Alle dage</button>
+        </div>
+
+
         <div class="musik container">
-            <div>
+            <div class="artist lørdag alle" data="nik-jay" dag="torsdag">
                 <img src="img/musik/nik&jay.png" alt="">
             </div>
-            <div>
+
+            <div class="artist lørdag alle" data="suspekt">
+                <img src="img/musik/suspekt.png" alt="">
+            </div>
+            <div class="artist fredag alle" data="l-o-c">
                 <img src="img/musik/loc.png" alt="">
             </div>
-            <div>
+            <div class="artist lørdag alle" data="dagny-no">
+                <img src="img/musik/dagny-no.png" alt="">
+            </div>
+            <div class="artist lørdag alle" data="tv-2">
                 <img src="img/musik/tv2.png" alt="">
             </div>
-            <div>
+
+            <div class="artist fredag alle" data="the-minds-of-99">
                 <img src="img/musik/mo99.png" alt="">
             </div>
-            <div>
+            <div class="artist lørdag alle" data="karl-william">
+                <img src="img/musik/karlwilliam.png" alt="">
+            </div>
+
+            <div class="artist fredag alle" data="nico-vinz-no">
+                <img src="img/musik/nico%20_%20vinz.png" alt="">
+            </div>
+
+            <div class="artist torsdag alle" data="magtens-korridorer">
+                <img src="img/musik/magtens_korridorer.png" alt="">
+            </div>
+            <div class="artist torsdag alle" data="nicklas-sahl">
+                <img src="img/musik/nicklas.png" alt="">
+            </div>
+            <div class="artist torsdag alle" data="folkeklubben">
+                <img src="img/musik/folkeklubben.png" alt="">
+            </div>
+
+            <div class="artist lørdag alle" data="phlake">
+                <img src="img/musik/phlake.png" alt="">
+            </div>
+            <div class="artist lørdag alle" data="katinka">
+                <img src="img/musik/katinka.png" alt="">
+            </div>
+
+            <div class="artist fredag alle" data="svea-se">
+                <img src="img/musik/svea.png" alt="">
+            </div>
+            <div class="artist fredag alle" data="oh-land">
+                <img src="img/musik/ohland.png" alt="">
+            </div>
+            <div class="artist fredag alle" data="shaka-loveless-wafand">
+                <img src="img/musik/wafandeogshaka.png" alt="">
+            </div>
+            <div class="artist fredag alle" data="ea-kaya">
+                <img src="img/musik/eakaya.png" alt="">
+            </div>
+            <div class="artist torsdag alle" data="skinz">
+                <img src="img/musik/skinz.png" alt="">
+            </div>
+            <div class="artist fredag alle" data="lightwave-empire">
                 <img src="img/musik/lightwawe.png" alt="">
             </div>
 
-            <div>
-                <img src="img/musik/nicklas.png" alt="">
-            </div>
-
-            <div>
-                <img src="img/musik/ddh.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/eakaya.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/boundaries.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/dagny-no.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/folkeklubben.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/hum%C3%B8rekspressen.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/karlwilliam.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/katinka.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/magtens_korridorer.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/nico%20_%20vinz.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/ohland.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/skinz.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/phlake.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/suspekt.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/svea.png" alt="">
-            </div>
-            <div>
-                <img src="img/musik/the%20entrepreneurs.png" alt="">
-            </div>
-            <div>
+            <div class="artist fredag alle" data="the-william-blakes">
                 <img src="img/musik/the%20william%20blakes.png" alt="">
             </div>
-            <div>
-                <img src="img/musik/wafandeogshaka.png" alt="">
+            <div class="artist fredag alle" data="the-entrepreneurs">
+                <img src="img/musik/the%20entrepreneurs.png" alt="">
+            </div>
+            <div class="artist torsdag alle" data="de-danske-hyrder">
+                <img src="img/musik/ddh.png" alt="">
+            </div>
+            <div class="artist lørdag alle" data="humoerekspressen">
+                <img src="img/musik/hum%C3%B8rekspressen.png" alt="">
+            </div>
+            <div class="artist lørdag alle" data="boundaries">
+                <img src="img/musik/boundaries.png" alt="">
+            </div>
+
+
+
+            <div class="artist fredag alle" data="emil-kruse">
+                <img src="img/musik/emil-kruse.png" alt="">
+            </div>
+
+            <div class="artist torsdag alle" data="iris-gold">
+                <img src="img/musik/iris-gold.png" alt="">
+            </div>
+            <div class="artist torsdag alle" data="elias-boussnina">
+                <img src="img/musik/Elias-Boussnina.png" alt="">
+            </div>
+            <div class="artist lørdag alle" data="emil-lange">
+                <img src="img/musik/emil-lange.png" alt="">
+            </div>
+            <div class="artist torsdag alle" data="artigeardit">
+                <img src="img/musik/Artigeardit.png" alt="">
+            </div>
+
+            <div class="artist lørdag alle" data="mangera">
+                <img src="img/musik/Mangera.png" alt="">
+            </div>
+            <div class="artist lørdag alle" data="wonder-supreme-team">
+                <img src="img/musik/wonder-supreme-team.png" alt="">
+            </div>
+            <div class="artist lørdag alle" data="wonder-supreme-team">
+                <img src="" alt="">
+            </div>
+            <div class="artist lørdag alle" data="wonder-supreme-team">
+                <img src="" alt="">
             </div>
 
         </div>
@@ -212,7 +275,7 @@
         </a>
     </section>
     <section id="frivillig" class="container">
-        <h2>Frivillig på Wonderfestiwall? </h2>
+        <h2 class="container">Frivillig på Wonderfestiwall? </h2>
 
         <p>Kunne du tænke dig at arbejde som frivillig på Wonderfestiwall? Festivalen er 100% drevet og afhængig af frivillige, og vi kan altid bruge en hånd både under og efter festivalen.
 
@@ -236,6 +299,8 @@
         <h1 class="sponsor_forside_h1">Sponsorer</h1>
 
         <div class="logoer">
+            <div><img src="img/sponsor/forside/bornholmslinjen.png" alt=""></div>
+
             <div><img src="img/sponsor/forside/bornfiber.png" alt=""></div>
             <div><img src="img/sponsor/forside/tuborg.png" alt=""></div>
             <div><img src="img/sponsor/forside/dat.png" alt=""></div>
@@ -243,7 +308,7 @@
             <div><img src="img/sponsor/forside/beof.png" alt=""></div>
 
         </div>
-        <a href="/sponsor" target="blank_">
+        <a href="sponsor.html">
             <div class="button1">SE ALLE SPONSORER</div>
         </a>
 
@@ -254,7 +319,7 @@
 
         <h1>INFO</h1>
 
-        <div class="accordion container" id="accordionExample">
+        <div class="accordion-1 container">
 
 
 
@@ -263,29 +328,10 @@
     </section>
 
     <footer>
-        <div class="link">
-            <a target="_blank" href="https://www.ticketmaster.dk/artist/wonderfestiwall-billetter/991675">
-                <h4>BILLETTER</h4>
-            </a>
-            <a href="#lineup">
-                <h4>LINE UP</h4>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/events/250669885602288/">
-                <h4>EVENT</h4>
-            </a>
-            <a target="_blank" href="/frivillig.html">
-                <h4>FRIVILLIG</h4>
-            </a>
-            <a target="_blank" href="/sponsor.html">
-                <h4>SPONSORER</h4>
-            </a>
-            <a target="_blank" href="https://www.danskoferie.dk/bestil/pakkerejser/1744237/pakketur-til-wonderfestiwall-2019-fra-ystad?fbclid=IwAR36LOcZtFapcmw4vVLJ_NTfhAPzo0uuirvgeS4hRJU7TiVzqUu16Trg_Z8">
-                <h4>PAKKEREJSE</h4>
-            </a>
+        <div class="mail_adresse">
+            <p>info@wonderfestiwall.dk</p>
+            <p>Slotslyngen, Nordbornholm</p>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
 
     </footer>
 

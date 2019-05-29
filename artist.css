@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'hurme_geometric_sans_4black';
+    src: url('fonts/black-webfont.woff2') format('woff2'),
+        url('fonts/black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.artist-container {}
+
+.artist-container h4 {
+    font-family: 'hurme_geometric_sans_4black';
+    color: #ffc7d1;
+}
+
+.artist-container h1 {
+    font-family: 'hurme_geometric_sans_4black';
+    color: #ffc7d1;
+    font-size: 500%;
+}
+
+
+.artist-container p {
+    /*
+    width: 100%;
+    max-width: 900px;
+*/
+    color: white;
+    box-sizing: border-box;
+    font-size: 20px;
+    hyphens: auto;
+    letter-spacing: .5px;
+    line-height: 35px;
+    margin-top: 20px;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.artist-container .top {
+    padding-top: 10vw;
+    display: grid;
+    justify-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 30px;
+    padding-top: 10vw;
+}
+
+
+.artist-container .top .socials {
+    flex-direction: row;
+    margin-top: 2vw;
+    /*    width: 100%;*/
+    text-align: center;
+    -webkit-box-align: start;
+    -webkit-box-pack: justify;
+    align-items: flex-start;
+    border-bottom: 3px solid #ffc7d1;
+    border-top: 3px solid #ffc7d1;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-top: 50px padding: 30px 0;
+    width: 100%;
+}
+
+.artist-container .top .title {
+    flex-direction: row;
+    margin-top: 2vw;
+    /*    width: 100%;*/
+    text-align: center;
+    display: inline;
+}
+
+
+.artist-container .top .socials i {
+    font-size: 250%;
+    color: whitesmoke;
+    margin: .5vw;
+
+}
+
+
+
+.artist-container .top .socials {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.artist-container img {
+    align-self: center;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+}
+
+.artist-container .billede {
+    width: 100%;
+    height: 500px;
+    max-height: 500px;
+    background-size: cover;
+    background-position: top;
+    /*    background-repeat: no-repeat;*/
+}
+
+
+@media only screen and (max-width: 880px) {
+    .artist-container .billede {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        margin-top: 3.4em;
+
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .artist-container .top {
+        padding: 0px;
+    }
+
+    .artist-container .billede {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        margin-top: 3.4em;
+
+    }
+
+    .artist-container .top .title {
+
+        font-size: .6em;
+    }
+
+    .artist-container p {
+        width: 100%;
+        padding: 1em;
+    }
+
+}
